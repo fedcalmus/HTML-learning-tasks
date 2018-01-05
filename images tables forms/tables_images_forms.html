@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TIF</title>
+</head>
+<body>
+<h1>Figure and figure caption</h1>
+<figure>
+    <img src="img/Bicycle2.jpg" alt="Bicycle Image" width="10%">
+    <figcaption>A bicycle, also called a cycle or bike, is a human-powered, pedal-driven, single-track vehicle,
+        having two wheels attached to a frame, one behind the other.
+    </figcaption>
+</figure>
+<h1>Tables/ Spanning columns</h1>
+<table>
+    <tr>
+        <td>Italy</td>
+        <td>Spain</td>
+        <td>Peru</td>
+        <td>Machu Picchu</td>
+    </tr>
+    <tr>
+        <td colspan="2">500</td>
+        <td>400</td>
+        <td>300</td>
+        <td>200</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>221212</td>
+        <td>221212</td>
+        <td>200000</td>
+    </tr>
+</table>
+<h1>Table with heading</h1>
+<table>
+    <tr>
+        <th></th>
+        <th scope="col">Italy</th>
+        <th scope="col">Spain</th>
+    </tr>
+    <tr>
+        <th scope="row">Capital</th>
+        <td>Rome</td>
+        <td>Madrid</td>
+    </tr>
+    <tr>
+        <th scope="row">Population</th>
+        <td>60.6 million</td>
+        <td>46.56 million</td>
+    </tr>
+</table>
+<h1>Spanning rows and Long tables</h1>
+<table>
+    <thead>
+    <tr>
+        <th>10 most expensive cars in the world	Weeks</th>
+    </tr>
+    <tr>
+        <th>N</th>
+        <th>Model</th>
+        <th>Price</th>
+        <th>Year</th>
+        <th>Country</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">#1</th>
+        <td>Aston Martin One-77</td>
+        <td>$1.6M</td>
+        <td>2017</td>
+        <td>GB</td>
+    </tr>
+    <tr>
+        <th scope="row">#2</th>
+    <td>Ferrari F60 America</td>
+    <td>$2.5M</td>
+        <td></td>
+        <td rowspan="2">Italy</td>
+    </tr>
+    <tr>
+    <th scope="row">#3</th>
+        <td>Bugatti Veyron Grand Sport Vitesse</td>
+        <td>$2.6M</td>
+        <td>2017</td>
+        <td></td>
+    </tr>
+    </tbody>
+</table>
+<h1>Forms</h1>
+<form action="">
+    <p>Text input <input type="text" name="text input" maxlength="10" placeholder="Text input">
+    </p>
+</form>
+<form action="">
+    <p>Password <input type="password" name="password" maxlength="6">
+    </p>
+</form>
+<form action="">
+      <p>Text area</p>
+<textarea name="Comment" placeholder="This is a text area"></textarea>
+</form>
+
+<form action="">
+    <p>What's your favourite?</p>
+    <input type="radio" name="favourite" value="radio" checked="checked"/> Radio button
+    <input type="radio" name="favourite" value="checkbox"/> Checkbox
+    <input type="radio" name="favourite" value="both"/> Both
+</form>
+<form action="">
+    <p>What's your favourite?</p>
+    <input type="checkbox" name="favourite" value="radio" checked="checked"/> Radio
+    <input type="checkbox" name="favourite" value="radio"/> Checkbox
+</form>
+<h1>Drop down list box</h1>
+<form action="">
+    <p>What is your favourite?</p>
+    <select name="Football">
+        <option value="Football">Football</option>
+        <option value="Calcio" selected="selected">Calcio</option>
+        <option value="Soccer">Soccer</option>
+    </select>
+</form>
+<h1>Multi select box</h1>
+<form action="">
+    <p>What's your favourite? (You can choose more than one option</p>
+</form>
+</body>
+</html>
