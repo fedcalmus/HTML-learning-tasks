@@ -7,18 +7,30 @@
           content="Some tasks from CSS ;)" />
     <meta name="keywords"
           content="CSS, Styles" />
+    <!-- Start Theme CSS -->
+
+    <link rel="stylesheet" href="style/Main.css">
+    <!-- End Theme CSS -->
 </head>
 <body>
 <header>
     <nav>
+        <div class="navContainer">
         <ul>
             <li><a href="#" class="current">Home</a></li>
             <li><a href="#">Videos</a></li>
             <li><a href="">Articles</a></li>
         </ul>
+        <form action="">
+            <input type="search" name="search"
+                   placeholder="Search" />
+            <input type="submit" value="Search" />
+        </form>
+        </div>
     </nav>
 </header>
 <div id="content">
+    <div class="articleContent">
     <article>
         <figure>
             <img src="img/venice.jpg" alt="Venice" />
@@ -63,6 +75,7 @@
             bay, whose beauty has served as driving inspiration for many an artist.
         </p>
     </article>
+    </div>
     <aside>
         <section class="populae-cities">
             <h3>Popular Cities of Italy</h3>
