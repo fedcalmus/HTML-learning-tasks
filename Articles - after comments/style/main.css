@@ -64,18 +64,17 @@ nav::after {
     list-style: none;
     display:inline;
 }
-li{
+.menu li{
     float: left;
     padding: 10px 0 10px 40px;
-
 }
-li a{
+.menu li a{
     text-decoration: none;
     color: #BDBDBD;
     font-size:18px;
 }
 
-li a:hover,  nav li a.current{
+.menu li a:hover,  nav li a.current{
     color: #929292;
 }
 
@@ -133,7 +132,6 @@ article{
     width: 45%;
     margin: 10px;
     text-align: center;
-    display: block;
     border:1px solid #6161618a;
     padding:20px;
 
@@ -191,17 +189,27 @@ article p{
 aside {
     float:right;
     width:25%;
-    margin-top: 13px;
+    padding-top: 7px;
+
 }
-aside section a {
-    display: block;
-    padding: 10px;
+.listCities a {
     color: #616161;
     font-family: 'Helvetica', Georgia, times, serif;
 }
-aside section a:hover {
+.listCities a:hover {
     color: #0b0b0b;
-    background-color: #efefef;
+ 
+}
+
+.listCities{
+    list-style-type: none;
+    margin: 0;
+    max-width: 130px;
+    width: 80px;
+}
+
+.listCities li{
+    padding: 15px;
 }
 
 footer{
