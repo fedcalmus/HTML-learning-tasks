@@ -124,7 +124,6 @@ input[type="submit"]:hover{
 }
 .articleContent{
 
-    padding: 5px;
     float: left;
     width:70%;
 }
@@ -136,6 +135,7 @@ article{
     text-align: center;
     display: block;
     border:1px solid #6161618a;
+    padding:20px;
 
 }
 
@@ -158,9 +158,7 @@ article img{
     height: 150px;
 }
 
-figure{
-    padding-top: 25px;
-}
+
 
 figcaption{
     font-style: italic;
@@ -178,13 +176,15 @@ article h3{
 
 article p{
     overflow: hidden;
-    height:150px;
+    height: 130px;
+    max-height: 150px;
     font-size:14px;
     color:#616161;
     text-align:center;
     font-family: Georgia, times, serif;
-    padding: 15px;
-    margin-bottom:15px;
+    margin-top:15px;
+
+
 }
 
 
