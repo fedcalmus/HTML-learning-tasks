@@ -32,33 +32,42 @@ time, mark, audio, video {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+
 }
+
+
 body{
     color: #666666;
     background-color: #f9f8f6;
     font-family: 'Helvetica', Georgia, times, serif;
-    margin: 0 auto;
     font-size: 16px;
     outline: none;
+    margin:0;
+    min-height: 100%;
+
 }
 
 
 header, footer {
-    width: 100%;
+
     height: 40px;
     background-color: rgba(9, 4, 4, 0.75);
     padding: 0 30px;
 }
-nav{
-    position: static;
+
+nav::after {
+    content: " ";
+    clear: both;
 }
-ul{
+
+.menu {
     list-style: none;
     display:inline;
 }
 li{
     float: left;
     padding: 10px 0 10px 40px;
+
 }
 li a{
     text-decoration: none;
@@ -70,7 +79,7 @@ li a:hover,  nav li a.current{
     color: #929292;
 }
 
-form{
+.searchForm {
     float: right;
     padding: 5px 10px 5px;
 
@@ -97,7 +106,7 @@ input[type="submit"] {
     color:#BDBDBD;
     cursor:pointer;
     margin-left:10px;
-    width: 50px;
+    padding:5px;
 }
 input[type="submit"]:hover{
     background-color: #323232;
@@ -105,11 +114,13 @@ input[type="submit"]:hover{
 
 }
 
-.content{
+.container{
     max-width: 1170px;
+    width:1170px;
     margin:0 auto;
     padding: 5px 15px;
     position:relative;
+
 }
 .articleContent{
 
@@ -173,13 +184,14 @@ article p{
     text-align:center;
     font-family: Georgia, times, serif;
     padding: 15px;
+    margin-bottom:15px;
 }
 
 
 aside {
     float:right;
     width:25%;
-    margin: 10px;
+    margin-top: 13px;
 }
 aside section a {
     display: block;
@@ -193,11 +205,15 @@ aside section a:hover {
 }
 
 footer{
-    clear:both;
+
     text-align:center;
     padding-top:10px;
     color: #BDBDBD;
     font-family: Georgia, times, serif;
     font-size:18px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
